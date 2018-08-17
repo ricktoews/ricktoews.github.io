@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
+import HomeIcon from '@material-ui/icons/Home';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
@@ -33,8 +33,8 @@ class Header extends React.Component {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction component={Link} to="/" label="Home" icon={<RestoreIcon />} />
-        <BottomNavigationAction component={Link} to="/roster" label="Roster" icon={<FavoriteIcon />} />
+        <BottomNavigationAction component={Link} to="/" label="Home" icon={<HomeIcon />} />
+        <BottomNavigationAction component={Link} to="/phi" label="Math" icon={<FavoriteIcon />} />
         <BottomNavigationAction component={Link} to="/roster/42" label="HHGTG" icon={<FavoriteIcon />} />
         <BottomNavigationAction component={Link} to="/schedule" label="Schedule" icon={<LocationOnIcon />} />
       </BottomNavigation>
