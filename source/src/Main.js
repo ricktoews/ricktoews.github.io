@@ -3,36 +3,42 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import { Switch, Route } from 'react-router-dom';
-import { Roster, Schedule, Home } from './Content';
-import Phi from './Phi';
+import { Home } from './Content';
+import Decimal from './Decimal';
+import Logophilia from './Logophilia';
+import Travel from './Travel';
 
 const styles = theme => ({
   root: {
     ...theme.mixins.gutters(),
     paddingTop: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 2,
-    width: '1024px',
+    background: "rgba(0,0,0,.2)",
+    width: '90%',
     margin: 'auto',
-  }
+  },
 });
 
-function Main (props) {
-    const { classes } = props;
+function PaperSheet(props) {
+  const { classes } = props;
 
-    return (
-    <Paper className={classes.root}>
+  return (
+    <div>
+      <Paper className={classes.root} elevation={1}>
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route path='/phi' component={Phi}/>
-        <Route path='/roster' component={Roster}/>
-        <Route path='/schedule' component={Schedule}/>
+        <Route path='/decimal' component={Decimal}/>
+        <Route path='/logophilia' component={Logophilia}/>
+        <Route path='/travel' component={Travel}/>
       </Switch>
-    </Paper>
-    )
+      </Paper>
+    </div>
+  );
 }
 
-Main.propTypes = {
+PaperSheet.propTypes = {
   classes: PropTypes.object.isRequired,
-}
+};
 
-export default withStyles(styles)(Main);
+export default withStyles(styles)(PaperSheet);
+

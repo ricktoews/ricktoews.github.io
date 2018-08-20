@@ -1,12 +1,27 @@
 import React from 'react';
-import Header from './Header';
+import { withStyles } from '@material-ui/core/styles';
+import Nav from './Nav';
 import Main from './Main';
 
-const App = () => (
-    <div>
-      <Header />
+const style = ({
+  root: {
+    background: "url(/media/images/iceland.jpg)",
+    filter: "grayscale(80%)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh",
+  },
+});
+
+const App = (props) => {
+	const { classes } = props;
+
+	return (
+    <div className={classes.root}>
+      <Nav />
       <Main />
     </div>
-)
+	);
+}
 
-export default App
+export default withStyles(style)(App);

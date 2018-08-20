@@ -9,10 +9,9 @@ const Roster = () => (
       <Route path='/roster/:number' component={Player}/>
     </Switch>
   </div>
-)
+);
 
 const Player = (props) => {
-console.log('Player component', props);
   const player = props.match.params.number;
 
   return (
