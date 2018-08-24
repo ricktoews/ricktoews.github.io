@@ -5,7 +5,8 @@ import Main from './Main';
 
 const style = ({
   root: {
-    background: "url(/media/images/iceland_bw.jpg)",
+//    background: "url(/media/images/iceland_bw.jpg)",
+    background: '#333',
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "100vh",
