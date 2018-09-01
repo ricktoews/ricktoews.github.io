@@ -11,9 +11,9 @@ import Travel from './Travel';
 const styles = theme => ({
   root: {
     ...theme.mixins.gutters(),
+	backgroundColor: "#eeeeee",
     paddingTop: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 2,
-    background: "rgba(255,255,255,.5)",
     width: '90%',
     margin: 'auto',
     minHeight: 'calc(100vh - 200px)',
