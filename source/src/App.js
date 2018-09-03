@@ -5,9 +5,7 @@ import Main from './Main';
 
 const style = ({
   root: {
-    background: '#333',
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    background: '#000',
     height: "100vh",
   },
 });

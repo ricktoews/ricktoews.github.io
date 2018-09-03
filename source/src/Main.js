@@ -6,16 +6,16 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Decimal from './Decimal';
 import Logophilia from './Logophilia';
+import Bookshelf from './Bookshelf';
 import Travel from './Travel';
 
 const styles = theme => ({
   root: {
     ...theme.mixins.gutters(),
 	backgroundColor: "#eeeeee",
-    paddingTop: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 2,
-    width: '90%',
-    margin: 'auto',
+	margin: "auto",
+    width: "85%",
     minHeight: 'calc(100vh - 200px)',
   },
 });
@@ -32,6 +32,7 @@ class Main extends Component {
                 <Route exact path='/' component={Home}/>
                 <Route path='/decimal' component={Decimal}/>
                 <Route path='/logophilia' component={Logophilia}/>
+                <Route path='/books' component={Bookshelf}/>
                 <Route path='/travel' component={Travel}/>
               </Switch>
               </Paper>
