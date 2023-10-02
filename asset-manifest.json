@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ricktoews.github.io/static/css/main.e0e1b903.css",
+    "main.js": "/ricktoews.github.io/static/js/main.ac178f22.js",
+    "static/js/787.ebcf0f34.chunk.js": "/ricktoews.github.io/static/js/787.ebcf0f34.chunk.js",
+    "index.html": "/ricktoews.github.io/index.html",
+    "main.e0e1b903.css.map": "/ricktoews.github.io/static/css/main.e0e1b903.css.map",
+    "main.ac178f22.js.map": "/ricktoews.github.io/static/js/main.ac178f22.js.map",
+    "787.ebcf0f34.chunk.js.map": "/ricktoews.github.io/static/js/787.ebcf0f34.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0e1b903.css",
+    "static/js/main.ac178f22.js"
+  ]
+}
